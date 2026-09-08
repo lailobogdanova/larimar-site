@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Larimar — контакты</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#ffffff; --ink:#0e0e0d; --muted:#6b6a66; --gold:#a9812e; --line:#ececea; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',Arial,sans-serif;font-weight:400;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
+  .label{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:0 0 20px;font-weight:600;}
+  h1,h2{font-family:'Playfair Display',Georgia,serif;color:var(--ink);margin:0;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:36px 0;}
+  .wordmark{font-family:'Playfair Display',Georgia,serif;font-size:20px;letter-spacing:1px;font-weight:600;text-decoration:none;color:var(--ink);}
+  .navlinks{display:flex;gap:36px;}
+  .navlinks a{font-size:13px;letter-spacing:.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;}
+  .navlinks a.active,.navlinks a:hover{border-bottom-color:var(--ink);}
+  main{padding:70px 0 140px;}
+  h1{font-size:56px;letter-spacing:-1.5px;margin:0 0 50px;}
+  .contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+  .lead{color:var(--muted);font-size:16px;margin:0 0 40px;max-width:440px;}
+  .contact-line{font-size:24px;color:var(--ink);margin:0 0 14px;font-weight:500;}
+  .contact-line a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--gold);}
+  .temp-note{font-size:13px;color:var(--muted);margin-top:30px;max-width:420px;line-height:1.7;}
+  footer{padding:60px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;border-top:1px solid var(--line);}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);}
+  .reveal.visible{opacity:1;transform:none;}
+  @media(max-width:800px){.contact-wrap{grid-template-columns:1fr;} h1{font-size:34px;} nav{flex-direction:column;gap:16px;align-items:flex-start;} footer{flex-direction:column;gap:8px;}}
+</style>
+</head>
+<body>
+
+<nav class="wrap">
+  <a class="wordmark" href="index.html">LARIMAR</a>
+  <div class="navlinks">
+    <a href="services.html">Услуги</a>
+    <a href="cases.html">Кейсы</a>
+    <a class="active" href="contact.html">Контакты</a>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="label reveal">Контакт</div>
+  <h1 class="reveal">Обсудить проект</h1>
+  <div class="contact-wrap">
+    <div>
+      <p class="lead reveal">Направьте запрос напрямую — ответ в течение рабочего дня. Перед началом работы проводится предварительный созвон для оценки задач и формата сотрудничества.</p>
+    </div>
+    <div>
+      <p class="contact-line reveal"><a href="https://t.me/Bogdanova_Laylo">Telegram</a></p>
+      <p class="contact-line reveal"><a href="mailto:bogdanova.laylo@gmail.com">bogdanova.laylo@gmail.com</a></p>
+    </div>
+  </div>
+</main>
+
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, {threshold:.1, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+
+<footer class="wrap">
+  <span>Ташкент, Узбекистан</span>
+  <span>© 2026 Larimar</span>
+</footer>
+
+</body>
+</html>

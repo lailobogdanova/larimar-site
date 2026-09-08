@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Larimar — кейсы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#ffffff; --ink:#0e0e0d; --muted:#6b6a66; --gold:#a9812e; --line:#ececea; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Inter',Arial,sans-serif;font-weight:400;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 40px;}
+  .label{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin:0 0 20px;font-weight:600;}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--ink);margin:0;}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:36px 0;}
+  .wordmark{font-family:'Playfair Display',Georgia,serif;font-size:20px;letter-spacing:1px;font-weight:600;text-decoration:none;color:var(--ink);}
+  .navlinks{display:flex;gap:36px;}
+  .navlinks a{font-size:13px;letter-spacing:.5px;color:var(--ink);text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;}
+  .navlinks a.active,.navlinks a:hover{border-bottom-color:var(--ink);}
+  header{padding:50px 0 90px;border-bottom:1px solid var(--line);}
+  h1{font-size:60px;line-height:1.02;font-weight:600;letter-spacing:-1.5px;max-width:800px;}
+  .lead{color:var(--muted);font-size:17px;max-width:620px;margin:26px 0 0;font-weight:400;}
+  .case{padding:80px 0;border-bottom:1px solid var(--line);}
+  .case-tag{font-family:'Playfair Display',serif;color:var(--gold);font-size:14px;font-weight:600;letter-spacing:.5px;}
+  .case h2{font-size:34px;margin:14px 0 8px;letter-spacing:-.5px;max-width:700px;}
+  .case-meta{font-size:13.5px;color:var(--muted);margin:0 0 36px;}
+  .case-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+  .case h3{font-size:14px;text-transform:uppercase;letter-spacing:1px;font-weight:600;margin:0 0 16px;color:var(--ink);}
+  .case p{font-size:15px;color:var(--muted);margin:0 0 14px;line-height:1.7;}
+  .case ul{margin:0 0 14px;padding:0;list-style:none;}
+  .case li{font-size:14.5px;color:var(--ink);padding:9px 0;border-top:1px solid var(--line);line-height:1.5;}
+  .case li:first-child{border-top:none;}
+  .case li span{color:var(--muted);}
+  .diag{background:#faf9f7;border:1px solid var(--line);padding:26px 28px;margin-bottom:20px;}
+  .diag ul{margin:0;}
+  .diag li{border-top:1px solid var(--line);}
+  .diag li:first-child{border-top:none;}
+  .result{font-size:15px;color:var(--ink);margin:0;line-height:1.7;}
+  .spot{padding:70px 0;}
+  .spot h2{font-size:30px;margin:0 0 12px;}
+  .spot-lead{color:var(--muted);font-size:15px;max-width:600px;margin:0 0 36px;}
+  .spot-list{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--line);}
+  .spot-item{background:var(--bg);padding:30px 32px;}
+  .spot-item b{display:block;font-family:'Playfair Display',serif;font-size:16px;margin-bottom:8px;}
+  .spot-item p{font-size:14px;color:var(--muted);margin:0;line-height:1.6;}
+  .cta-block{padding:90px 0;text-align:left;border-top:1px solid var(--line);}
+  .cta{display:inline-block;background:var(--ink);color:#fff;padding:19px 44px;text-decoration:none;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;transition:all .2s;}
+  .cta:hover{background:var(--gold);}
+  footer{padding:60px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;border-top:1px solid var(--line);}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);}
+  .reveal.visible{opacity:1;transform:none;}
+  @media(max-width:800px){.case-cols{grid-template-columns:1fr;gap:16px;} .spot-list{grid-template-columns:1fr;} h1{font-size:34px;} .case h2{font-size:26px;} nav{flex-direction:column;gap:16px;align-items:flex-start;} footer{flex-direction:column;gap:8px;}}
+</style>
+</head>
+<body>
+
+<nav class="wrap">
+  <a class="wordmark" href="index.html">LARIMAR</a>
+  <div class="navlinks">
+    <a href="services.html">Услуги</a>
+    <a class="active" href="cases.html">Кейсы</a>
+    <a href="contact.html">Контакты</a>
+  </div>
+</nav>
+
+<header class="wrap">
+  <div class="label">Кейсы</div>
+  <h1>Практический опыт</h1>
+  <p class="lead">Названия компаний обезличены по договорённости — сохранение конфиденциальности клиентов и работодателей.</p>
+</header>
+
+<div class="wrap">
+
+  <div class="case reveal">
+    <div class="case-tag">01</div>
+    <h2>Аудит контакт-центра автосалона</h2>
+    <p class="case-meta">Дилерский центр легковых автомобилей · удалённый аудит с локальным супервайзером на месте</p>
+    <div class="case-cols">
+      <div>
+        <h3>Диагностика</h3>
+        <div class="diag">
+          <ul>
+            <li>1 145 входящих обращений за отчётную неделю</li>
+            <li>60,8% конверсия в приём звонка <span>(696 принято)</span></li>
+            <li>440 обращений потеряно <span>(«не дождался»)</span></li>
+            <li>14,7 сек среднее время ответа в рабочее время</li>
+            <li>47–85% разброс дневной конверсии</li>
+          </ul>
+        </div>
+        <p>Ключевой вывод: основной источник потерь — техническая нестабильность CRM и телефонии (маршрутизация, некорректная фиксация статусов), а не нехватка сотрудников. Это изменило приоритет: не найм, а перестройка процессов и инструментов.</p>
+      </div>
+      <div>
+        <h3>Что сделано</h3>
+        <ul>
+          <li>Прослушка звонков, анализ CRM Bitrix и Google Sheets</li>
+          <li>Карта проблем и план перехода в единую CRM</li>
+          <li>Первый пакет регламентов и скриптов звонков</li>
+          <li>KPI-рекомендации для контакт-центра</li>
+        </ul>
+        <p class="result">Результат: аудит вскрыл реальный источник потерь и дал компании чёткий план внедрения — приоритеты и первый пакет документов для дальнейшей систематизации.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="case reveal">
+    <div class="case-tag">02</div>
+    <h2>Построение отдела продаж с нуля</h2>
+    <p class="case-meta">Компания сферы услуг, Узбекистан</p>
+    <div class="case-cols">
+      <div>
+        <h3>Что сделано</h3>
+        <ul>
+          <li>Кадровая документация с нуля <span>— положение об отделе, должностная инструкция, регламент CRM, стандарт коммуникаций, положение о мотивации, шаблоны NDA/трудового/ГПХ</span></li>
+          <li>Скрипты продаж <span>— холодный звонок, выход на ЛПР, отработка возражений</span></li>
+          <li>Велком-пак для новых сотрудников <span>— маршрут адаптации «День 1–6», аттестационный тест, база знаний</span></li>
+          <li>Аналитика рынка Узбекистана и конкурентной среды</li>
+          <li>Личная работа с клиентами <span>— КП, презентации, переговоры и сопровождение сделок</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Аудит CRM выявил</h3>
+        <div class="diag">
+          <ul>
+            <li>2 660 сделок в системе, закрыто успешно — 140 <span>(~5,3%)</span></li>
+            <li>~580 дублей контактов <span>(~22%)</span></li>
+            <li>Поле «Источник» не заполнено ни в одной сделке</li>
+          </ul>
+        </div>
+        <p class="result">Причина провала новых менеджеров — не квалификация, а отсутствие потока лидов и согласованных цен поставщиков. Решение: приостановить найм до устранения корневой проблемы, чтобы не повторять цикл найма и увольнений вхолостую — управленческое решение, которое защитило компанию от повторных затрат.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="spot wrap">
+  <div class="label reveal">Также</div>
+  <h2 class="reveal">Точечные задачи</h2>
+  <p class="spot-lead reveal">Не всегда нужен полный проект — иногда достаточно одной точной задачи.</p>
+  <div class="spot-list">
+    <div class="spot-item reveal">
+      <b>Мебельная розница</b>
+      <p>Разработала чек-лист контроля звонков на основе действующего скрипта продаж отдела — инструмент, по которому руководитель может регулярно проверять, насколько разговоры менеджеров соответствуют стандарту, не прослушивая каждый звонок целиком.</p>
+    </div>
+    <div class="spot-item reveal">
+      <b>Медицинский центр</b>
+      <p>Построила финансовую модель для отдела продаж — расчёт затрат и ожидаемой выручки, основа для планирования бюджета на развитие направления.</p>
+    </div>
+  </div>
+</div>
+
+<div class="cta-block wrap">
+  <a class="cta" href="contact.html">Обсудить проект</a>
+</div>
+
+<footer class="wrap">
+  <span>Ташкент, Узбекистан</span>
+  <span>© 2026 Larimar</span>
+</footer>
+
+<script>
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, {threshold:.1, rootMargin:'0px 0px -60px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+
+</body>
+</html>
